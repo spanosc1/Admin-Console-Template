@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Console</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" media="all" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"/>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.css" />
+  <script src="../js/upload.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<p>Start Date:</p>
+				<input type="text" class="datepicker" id="startDate">
+				<p>End Date:</p>
+				<input type="text" class="datepicker" id="endDate">
+		  		<p>Item Name:</p>
+		  		<input type="text" id="itemName">
+		  		<p>Item Desc:</p>
+		  		<textarea class="form-control" id="itemDesc" rows="8"></textarea>
+		  		<p>Image</p>
+		  		<button id="browse">Browse</button>
+		  		<br>
+		  		<button id="submit">Submit Ad</button>
+			</div>
+			<div class="col-sm-6">
+				<div id="recentItem">
+					<h3>Current Item</h3>
+					<p id="timeStart"></p>
+					<p id="timeEnd"></p>
+					<p id="name"></p>
+					<p id="desc"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
