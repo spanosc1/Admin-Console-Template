@@ -16,18 +16,19 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<p>Start Date:</p>
-				<input type="text" class="datepicker" id="startDate">
-				<p>End Date:</p>
-				<input type="text" class="datepicker" id="endDate">
+				<form method="post" enctype="multipart/form-data">
+					<p>Start Date:</p>
+					<input type="text" class="datepicker" id="startDate">
+					<p>End Date:</p>
+					<input type="text" class="datepicker" id="endDate">
 		  		<p>Item Name:</p>
 		  		<input type="text" id="itemName">
 		  		<p>Item Desc:</p>
 		  		<textarea class="form-control" id="itemDesc" rows="8"></textarea>
-		  		<p>Image</p>
-		  		<button id="browse">Browse</button>
-		  		<br>
-		  		<button id="submit">Submit Ad</button>
+	  			<input type="file" name="myimage"/>
+	  			<button id="submit" type="submit">Submit Ad</button>
+	  		</form>
+	  		<br>
 			</div>
 			<div class="col-sm-6">
 				<div id="recentItem">

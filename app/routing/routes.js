@@ -1,5 +1,8 @@
 var Item = require("../model/item.js");
 var path = require('path');
+var fs = require('fs');
+var multer = require('multer');
+var upload = multer({dest: 'app/public/uploads/'});
 
 // ===============================================================================
 // ROUTING
@@ -38,6 +41,10 @@ module.exports = function(app){
 				console.log("Success");
 			});
 		res.send(true);
+	});
+	app.post('/', upload.any(), function(req, res) {
+		
+		res.send(req.files);
 	});
 	app.use(function(req, res){
 		res.sendFile(path.join(__dirname + '/../public/html/index.html'));
